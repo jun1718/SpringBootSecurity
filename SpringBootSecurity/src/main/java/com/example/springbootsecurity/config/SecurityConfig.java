@@ -25,6 +25,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.formLogin()
             .and()
             .logout();
+
+        http.oauth2Login();
     }
 
 //    @Override
